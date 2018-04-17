@@ -1,0 +1,259 @@
+<html>
+<head>
+    <title>TWIXTER</title>
+    <link rel="stylesheet" href="proj.css">
+    <meta http-equiv="refresh" content="5">
+<style>
+#kryesore
+{
+   overflow-y:scroll;
+}
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #000; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+    opacity: 0.25;
+
+}
+
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: #DA70D6; /* White text color */
+
+    font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+    background-color: #555; /* Add a hover colo}
+
+.active {
+    background-color: #4CAF50; /* Add an active/current color */
+}
+.left {  background: rgba(0, 0, 0, 0.5);
+        width: 35%; 
+        float:left;
+        opacity:0.425;
+        padding-left:12px;
+        padding-right:5px;
+        padding-top: 275px;
+        padding-bottom: 260px;
+        margin-top: 30px;
+       
+      }   
+.right{ background-color: none;
+       width: 60%; 
+       float:right;
+       
+        padding-left:5px;
+        padding-right:15px;
+        padding-top: 0px;
+        padding-bottom: 30px;
+        margin-top: 30px;
+     
+      }    
+    .row {
+    margin: 8px 16px;
+        
+}
+    div.right p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+    
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 18px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 18%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+}
+
+/* Content */
+.content {
+    background-color: none;
+    padding: 10px;
+    opacity: 1;
+}
+img {
+    border-radius: 50%;
+     cursor: pointer;
+}
+
+   
+}        
+ .zoom {
+    padding: 50px;
+    background-color: green;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+} 
+.desc{
+       margin-top: 3px; 
+       margin-bottom: 15px;
+    }
+    @-webkit-keyframes bounce {
+        0% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+  
+  30%{
+    transform: scale(1,0.8) translate(0px, 10px); 
+  }
+
+  75%{
+    transform: scale(1,1.1) translate(0px, -25px); 
+  }
+  
+ 100% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+}
+    
+ .button {
+    background-color:  #E0E6FF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 70px; 
+     border-radius: 12px;
+     margin-left: 120px;
+
+        }   
+    .button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    -webkit-animation: bounce 0.75s 2   ;      
+      
+}    
+</style>
+  </head>      
+<body background={{ url_for('static', filename='background1.jpg')}}>
+     <div>
+         <div class="icon-bar">
+         <a href="#"><img src=""></a>
+         <a href="#"><h1 Align ="centre"><font size="6" color="#b0b079" ></font></h1></a>
+         <a href="#"><h1 Align ="centre"><font size="6" color="#b0b079" ></font></h1></a>
+         
+         <a href="file:///D:/front_end_akshay/project.html"><h1 Align ="centre"><font size="6" color="#fdff70" >HOME</font></h1></a> 
+         <a href="#"><h1 Align ="LEFT"><font size="6" color="#fdff70" >ABOUT US</font></h1></a> 
+        
+        </div>
+    
+        <div class="left">
+             <font color="#fdff70" SIZE="7.5"> TRENDSETTERS </font> 
+             <div class="desc" >
+                 <H>  <font color="#f6dba2" SIZE="5"><br>THE MOST FOLLOWED PEOPLE ON TWITTER </font></H>
+             </div>
+             <a href="{{ url_for('index')}}" class="button" ><font color="black">START</font></a> 
+        </div>
+
+        <div class="right">
+            <div class="row">
+                <div class="column">
+                    <div class="zoom">
+                    <div class="content">
+                        <img src="image0.jpg" alt="" style="width:100%">
+                        <h3>KATTY PERRY</h3>
+                       
+                    </div>
+                    </div>    
+                </div>
+                <div class="column">
+                    <div class="zoom">
+                    <div class="content">
+                        <img src="image1.jpg" alt="" style="width:100%">
+                    <h3>JUSTIN BEIBER</h3>
+                    
+                    </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="zoom">
+                    <div class="content" alt="" style="width:100%">
+                        <h3>BARACK OBAMA</h3>
+                       
+                   </div>
+                   </div> 
+                </div> 
+                <div class="column">
+                    <div class="zoom">
+                    <div class="content">
+                        <img src="image3.jpg" alt="" style="width:100%">
+                        <h3>RIHANNA</h3>
+                       
+                    </div>
+                    </div>    
+                </div>
+            </div>    
+              <div class="row">
+                <div class="column">
+                    <div class="zoom">
+                    <div class="content">
+                        <img src="image4.jpg" alt="" style="width:100%">
+                        <h3>TAYLOR SWIFT</h3>
+                       
+                    </div>
+                    </div>    
+                </div>
+                <div class="column">
+                    <div class="zoom">
+                    <div class="content">
+                        <img src="image5.jpg" alt="" style="width:100%">
+                    <h3>LADY GAGA</h3>
+                    
+                    </div>
+                    </div>
+                </div>
+                 <div class="column">
+                    <div class="zoom">
+                    <div class="content">
+                        <img src="image6.jpg" alt="" style="width:100%">
+                    <h3>ELLEN DEGENERES</h3>
+                    
+                    </div>
+                    </div>
+                </div>  
+                  <div class="column">
+                    <div class="zoom">
+                    <div class="content">
+                        <img src="image7.jpg" alt="" style="width:100%">
+                    <h3>YOU TUBE</h3>
+                    
+                    </div>
+                    </div>
+                </div>  
+            </div> 
+              
+        </div>
+    </div>
+</body>
+</html>             

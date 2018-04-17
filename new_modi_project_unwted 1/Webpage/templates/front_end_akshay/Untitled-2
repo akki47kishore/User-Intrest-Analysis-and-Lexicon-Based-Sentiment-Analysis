@@ -1,0 +1,17 @@
+
+        <a href="#"><font size="6">Sentiment Analysis</font></a> 
+        <a href="#"><font size="6">Topic Discussion</font></a>
+        
+        
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button1 {border-radius: 12px;background-color:#b0b079}
+.button1 {border-radius: 12px;background-color:#b0b079}

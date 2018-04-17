@@ -1,0 +1,131 @@
+<html>
+<head>
+    <title>TWEETY</title>
+    <style type="text/css">
+.bgimg {
+    background-image: url('images2.jpg');
+    height: 200px;
+    width: 100%;
+    
+    
+        }
+        .icon-bar {
+    width: 100%; /* Full-width */
+    background-color: none; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+    
+}
+
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 0px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 5px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+    background-color: #555; /* Add a hover colo}
+
+.active {
+    background-color: #4CAF50; /* Add an active/current color */
+}
+        
+.centralise
+        {
+        padding-top: 2cm;   
+            margin-left: 40px;
+        }
+.newbgimage
+        {
+            background-image: url('image2.png');
+            height: 550px;
+            
+            
+        }
+    @-webkit-keyframes bounce {
+        0% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+  
+  30%{
+    transform: scale(1,0.8) translate(0px, 10px); 
+  }
+
+  75%{
+    transform: scale(1,1.1) translate(0px, -25px); 
+  }
+  
+ 100% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+}        
+        
+input[type=text], select {
+    
+    padding: 12px 20px;
+    margin: 8px 50;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 12.5%;
+    background-color: #5e3c58;
+    color: white;
+    padding: 14px 20px;
+    margin: 50px 500px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: 		#9932CC;
+     -webkit-animation: bounce 0.75s 2 ;
+}
+       
+</style>
+</head>
+<body bgcolor="#071116">
+       
+<div class="bgimg">
+     <div class="icon-bar">
+         <a href="#"><img src=""></a>
+         <a href="#"><h1 Align ="centre"><font size="6" color="#b0b079" ></font></h1></a>
+         <a href="#"><h1 Align ="centre"><font size="6" color="#b0b079" ></font></h1></a>
+          <a href="#"><h1 Align ="centre"><font size="6" color="#b0b079" ></font></h1></a>
+         <a href="file:///D:/front_end_akshay/project.html"><h1 Align ="centre"><font size="6" color="#b0b079" >HOME</font></h1></a> 
+        <a href="#"><h1 Align ="LEFT"><font size="6" color="#b0b079" >ABOUT US</font></h1></a> 
+        
+        </div>
+  <div class="centralise">
+      
+      <H1 ><font size="8" color="#3fd6db"> </font><font size="8" color="#DFD297"> OPINION MINING</font></H1>
+       
+      
+</div>
+    </div>
+  <div class=newbgimage>
+      <div class="centralise">
+       <form action="/action_page.php">
+           <label for="tag"><font size="6" color="white">#Tag </font><font color="#071116">. .</font></label>
+           <input type="text" id="tag" name="t" placeholder="eg... #BlackPanther">
+
+           <label for="place"><p><h><font size="6" color="white">Place</font><font color="#071116">....</font></h></label>
+           <input type="text" id="place" name="p" placeholder="eg... Thiruvananthapuram">
+
+           <label for="radius"><p><h><font size="6" color="white">Radius</font></h></label>
+           <input type="text" id="radius" name="rad" placeholder="eg... 100km"> 
+    <input type="submit" value="Submit">
+  </form>
+    </div>
+    </div>
+        
+        
+    </body>
+</html>
